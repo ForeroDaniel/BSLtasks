@@ -16,6 +16,21 @@ const myPromise =  new Promise((res, rej) => {
 
 getResult()
 //RESOLVED
+const myPromise =  new Promise((res, rej) => {
+  setTimeout(() => {
+    res('Success')
+  }, 850)
+})
+
+async function getResult() {
+  const result = await myPromise
+  
+  console.log('Result:', result) // log: 'Result: Success'
+}
+
+getResult()
+
+
 
 
 
@@ -37,9 +52,26 @@ const myPromise =  new Promise((success, reject) => {
 
 getResult()
 //RESOLVED
+const myPromise =  new Promise((success, reject) => {
+  setTimeout(() => {
+    success(1)
+  }, 1000)
+})
+
+async function getResult() {
+  const result = await myPromise
+ 
+  const result2 = result + 2
+
+  console.log('Result:', result2) // log: 'Result: 3'
+}
+
+getResult()
 
 
-
+  
+  
+  
 
 //EJERCICIO 3
 const myPromise =  new Promise((success, reject) => {
@@ -60,9 +92,28 @@ getResult().???((result) => {
   console.log('Result:', result) // log: 'Result: 3'
 })
 //RESOLVED
+const myPromise =  new Promise((success, reject) => {
+  setTimeout(() => {
+    success(1)
+  }, 1000)
+})
+
+async function getResult() {
+  const result = await myPromise
+ 
+  const result2 = result + 2
+
+  return result2
+}
+
+getResult().then((result) => {
+  console.log('Result:', result) // log: 'Result: 3'
+})
 
 
-
+  
+  
+  
 
 //EJERCICIO 4
 const myPromise =  new Promise((success, reject) => {
@@ -82,6 +133,9 @@ const myPromise =  new Promise((success, reject) => {
 
 getResult()
 //RESOLVED
+
+
+
 
 
 
