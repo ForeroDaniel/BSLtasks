@@ -133,7 +133,22 @@ const myPromise =  new Promise((success, reject) => {
 
 getResult()
 //RESOLVED
+const myPromise =  new Promise((success, reject) => {
+  setTimeout(() => {
+    reject('error!')
+  }, 1000)
+})
 
+async function getResult() {
+  try {
+    const result = await myPromise 
+    console.log(result)
+  } catch(err) {
+    console.error(err)
+  }
+}
+
+getResult()
 
 
 
