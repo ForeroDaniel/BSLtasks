@@ -172,7 +172,7 @@ myPromise
   .then((result) => {
     console.log(result)
   })
-  //RESOLVED
+  //NOT_RESOLVED
   
   
   
@@ -199,4 +199,4 @@ myPromise
     console.log(err)
   })
 
-  //RESOLVED
+  //NOT_RESOLVED
