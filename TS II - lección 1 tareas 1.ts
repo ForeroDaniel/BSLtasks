@@ -41,6 +41,8 @@ let underSix = alumnos.forEach((alumno) => {
 
 
 //- Devuelva un arreglo ordenado segun el promedio de forma ascendente.
+let promedioAscendente = alumnos.sort((a, b) => a.promedio > b.promedio ? 1 : -1);
+console.log(promedioAscendente);
 
 
 //- El profesor decidio otorgar 2 puntos a todos los estudiantes cuya nota es menor o igual a 4, devuelva un arreglo que cumpla con esta condición
