@@ -48,4 +48,7 @@ console.log(promedioAscendente);
 //- El profesor decidio otorgar 2 puntos a todos los estudiantes cuya nota es menor o igual a 4, devuelva un arreglo que cumpla con esta condición
 
 
-//- Devuelva el promedio general de todos los alumnos
+//- Devuelva el promedio general de todos los alumnos 
+let sumadDePromedios = alumnos.reduce((total, value) => total + value.promedio, 0);
+let promedioGeneral = sumadDePromedios/alumnos.length
+console.log(promedioGeneral)
