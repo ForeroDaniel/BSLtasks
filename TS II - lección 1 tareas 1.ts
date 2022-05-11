@@ -35,6 +35,9 @@ let overSix = alumnos.forEach((alumno) => {
   
   
 //- Devuelva una lisita de los estudiantes cuyo promedio es menor a 6 puntos y la edad es mayor a 19 años.
+let underSix = alumnos.forEach((alumno) => {
+   if(alumno.promedio < 6 && alumno.edad > 19) {console.log(alumno)}
+  })
 
 
 //- Devuelva un arreglo ordenado segun el promedio de forma ascendente.
