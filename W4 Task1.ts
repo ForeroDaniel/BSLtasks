@@ -29,26 +29,45 @@ const alumnos: Array<Alumno> = [
 
   
 //- Devuelva una arreglo que contenga todos los estudiantes cuyo promedio es mayor a 6 puntos.
-let overSix = alumnos.forEach((alumno) => {
-   if(alumno.promedio > 6) {console.log(alumno)}
-  })
+function overSix(alumnos){return alumnos.forEach((alumno) => {if(alumno.promedio > 6) {console.log(alumno)}})}
+overSix(alumnos)
   
   
 //- Devuelva una lisita de los estudiantes cuyo promedio es menor a 6 puntos y la edad es mayor a 19 años.
-let underSix = alumnos.forEach((alumno) => {
+function underSix(alumnos){
+  let uSix = alumnos.forEach((alumno) => {
    if(alumno.promedio < 6 && alumno.edad > 19) {console.log(alumno)}
   })
+  return uSix
+}
+ underSix(alumnos) 
 
 
 //- Devuelva un arreglo ordenado segun el promedio de forma ascendente.
-let promedioAscendente = alumnos.sort((a, b) => a.promedio > b.promedio ? 1 : -1);
-console.log(promedioAscendente);
+function promedioAscendente(alumnos){return alumnos.sort((a, b) => a.promedio > b.promedio ? 1 : -1);}
+promedioAscendente(alumnos)
 
 
 //- El profesor decidio otorgar 2 puntos a todos los estudiantes cuya nota es menor o igual a 4, devuelva un arreglo que cumpla con esta condición
+function teRegaloDos(alumnos: Array<Alumno>): Array<Alumno> {
+  return alumnos.map((alumno) => {
+        if (alumno.promedio <= 4 ){
+       return {
+         nombre: alumno.nombre,
+         edad: alumno.edad,
+         correo: alumno.correo,
+         promedio: alumno.promedio + 2,} 
+    }
+    return alumno
+  })
+}
+teRegaloDos(alumnos)
 
 
 //- Devuelva el promedio general de todos los alumnos 
-let sumadDePromedios = alumnos.reduce((total, value) => total + value.promedio, 0);
-let promedioGeneral = sumadDePromedios/alumnos.length
-console.log(promedioGeneral)
+function promedioGeneral(alumnos){
+  const sumadDePromedios = alumnos.reduce((total, value) => total + value.promedio, 0);
+  const resultadoPromedio = sumadDePromedios/alumnos.length
+  return resultadoPromedio   
+}
+promedioGeneral(alumnos)
