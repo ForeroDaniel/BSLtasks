@@ -29,22 +29,21 @@ const alumnos: Array<Alumno> = [
 
   
 //- Devuelva una arreglo que contenga todos los estudiantes cuyo promedio es mayor a 6 puntos.
-function overSix(alumnos){return alumnos.forEach((alumno) => {if(alumno.promedio > 6) {console.log(alumno)}})}
-overSix(alumnos)
+function obtenerEstudiantesConPromediosMayoresASeis(alumnos){
+  return alumnos.filter((cadaEstudiante) => cadaEstudiante.promedio > 6)
+}
+obtenerEstudiantesConPromediosMayoresASeis(alumnos)
   
   
 //- Devuelva una lisita de los estudiantes cuyo promedio es menor a 6 puntos y la edad es mayor a 19 años.
-function underSix(alumnos){
-  let uSix = alumnos.forEach((alumno) => {
-   if(alumno.promedio < 6 && alumno.edad > 19) {console.log(alumno)}
-  })
-  return uSix
+function promedioMenorASeisEdadMayorADiecinueve(alumnos){
+ return alumnos.filter((cadaEstudiante) => cadaEstudiante.promedio < 6 && cadaEstudiante.edad > 19 )
 }
- underSix(alumnos) 
+ promedioMenorASeisEdadMayorADiecinueve(alumnos) 
 
 
-//- Devuelva un arreglo ordenado segun el promedio de forma ascendente.
-function promedioAscendente(alumnos){return alumnos.sort((a, b) => a.promedio > b.promedio ? 1 : -1);}
+// //- Devuelva un arreglo ordenado segun el promedio de forma ascendente.
+function promedioAscendente(alumnos){return alumnos.sort((a, b) => a.promedio - b.promedio)}
 promedioAscendente(alumnos)
 
 
