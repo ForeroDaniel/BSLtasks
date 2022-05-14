@@ -172,8 +172,18 @@ myPromise
   .then((result) => {
     console.log(result)
   })
-  //NOT_RESOLVED
-  
+  //RESOLVED
+  const myPromise = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve('success')
+  }, 500)
+})
+
+async function getResult() {
+    const result = await myPromise 
+    console.log(result)
+ }
+ getResult()  
   
   
   
@@ -199,4 +209,23 @@ myPromise
     console.log(err)
   })
 
-  //NOT_RESOLVED
+  //RESOLVED
+const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (Math.random() >= 0.5) {
+      resolve(1)
+    } else {
+      reject('An error has occurred')
+    }
+  }, 500)
+})
+
+async function getResult() {
+    try {
+    const result = await myPromise 
+    console.log(result)
+  } catch(err) {
+    console.error(err)
+  }
+}
+ getResult() 
