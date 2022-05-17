@@ -1,4 +1,4 @@
-EJERCICIO 1
+//EJERCICIO 1
 
 export function quarterOf(month: number): number {
   let result:number;
@@ -15,11 +15,29 @@ export function quarterOf(month: number): number {
                                      
                                      
                                      
-EJERCICIO 2
+//EJERCICIO 2
+
+export const boolToWord = (bool: boolean): string => {
+  return bool === true ? 'Yes' : 'No';
+};
+
+
+
+//EJERCICIO 3
+  
+
+
+
+
+//EJERCICIO 4
+  
+
+
+
+
+//EJERCICIO 5
                                      
-EJERCICIO 3
-                                     
-EJERCICIO 4
-                                     
-EJERCICIO 5
-                                     
+
+
+
+
