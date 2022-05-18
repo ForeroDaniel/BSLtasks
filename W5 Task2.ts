@@ -21,3 +21,18 @@ export class Kata {
 
 //EJERCICIO 3
 
+export class Kata {
+  static getCount(str: string): number {
+    let vowelCounter = 0;
+    for (let i = 0; i < str.length; i++) {
+      let vowels = ['a', 'e', 'i', 'o', 'u']
+      str[i] === vowels[0] || str[i] === vowels[1] || str[i] === vowels[2] || str[i] === vowels[3] || str[i] === vowels[4] ? vowelCounter++ : vowelCounter  
+    }
+    return vowelCounter
+  }
+}
+
+
+
+//EJERCICIO 4
+
