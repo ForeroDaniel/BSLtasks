@@ -46,3 +46,24 @@ export class Kata {
 
 //EJERCICIO 5
 
+//EJERCICIO 6
+
+function solution(value){
+  let fiveDigitsNumber = value.toString().length === 1 ?  `0000${value}` : 
+                         value.toString().length === 2 ?  `000${value}` :
+                         value.toString().length === 3 ?  `00${value}` :
+                         value.toString().length === 4 ?  `0${value}` :
+                         value.toString().length === 5 ?  `${value}` : 0
+  return `Value is ${fiveDigitsNumber}`                                          
+}
+
+
+
+//EJERCICIO 7
+
+function plant(seed, water, fert, temp){
+   return temp >= 20 && temp <= 30 ? `${'-'.repeat(water)}${seed.repeat(fert)}`.repeat(water) : `${'-'.repeat(water)}`.repeat(water) + seed
+}
+
+
+
