@@ -36,3 +36,13 @@ export class Kata {
 
 //EJERCICIO 4
 
+export class Kata {
+  static disemvowel(str: string): string {
+    return str.replace(/[aeiou]/gi, '');
+  }
+}
+
+
+
+//EJERCICIO 5
+
