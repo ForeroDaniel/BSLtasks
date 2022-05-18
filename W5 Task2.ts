@@ -46,6 +46,39 @@ export class Kata {
 
 //EJERCICIO 5
 
+function solution(list) {
+  let arr = [];
+
+  for (let i = 0; i < list.length; i++) {
+    let prev = list[i - 1];
+    let curr = list[i];
+    let next = list[i + 1];
+
+    switch (true) {
+      case curr - prev === 1 && next - curr === 1:
+        arr[arr.length - 1][1] = curr;
+        break;
+      case curr - prev !== 1 && next - curr !== 1:
+        arr.push([curr]);
+        break;
+      case curr - prev !== 1 && next - curr === 1:
+        arr.push([curr]);
+        break;
+      case curr - prev === 1 && next - curr !== 1:
+        if (arr[arr.length - 1].length === 1) {
+          arr.push([curr]);
+        } else {
+          arr[arr.length - 1][1] = curr;
+        }
+    }
+    
+  }
+
+  return arr.reduce((a, c) => (a.push(c.join("-")), a),[]).join(",");
+}
+
+
+
 //EJERCICIO 6
 
 function solution(value){
