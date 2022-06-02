@@ -1,0 +1,7 @@
+- Responde las siguientes preguntas:  
+- Dentro de OOP, ¿a que hace referencia el concepto de interfaz?  
+	- en ciertos lenguajes orientados a objetos, una interface es una estructura similar a una clase pero solo contiene métodos (funciones) y estas son de acceso público. En la práctica, se podría decir que una interface es una descripción de todas las funciones que cierto objeto debe tener, sin embargo, son funciones sin implementación, es decir, funciones  declaradas sin cuerpo ~~{...}~~, simplemente su descripción.  
+- ¿Específicamente en TypeScript, que es una interfaz?  
+	- En TypeScript, una interface es una alternativa al tipo objeto, es una estructura que declara propiedades y sus tipos. esta puede hacer uso de herencia y también puede ser modificada luego de ser creada  
+- El término interfaz dentro de TypeScript es diferente a como se entiende interfaz dentro de OOP. Explica cuáles son esas diferencias.  
+	- En programación orientada a objetos una interface está relacionada a las acciones que debe realizar cierto(s) objeto(s) (funciones), mientras que en TypeScript específicamente las utilizamos para definir el tipo (tipado de propiedades)  
