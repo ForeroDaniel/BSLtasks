@@ -15,7 +15,7 @@ class Protagonist extends Character {
   }
   uniqueVoiceTone() {}
   usualVoicePace() {}
-  fly() {}
+  fly<Type>(arg: Type): Type {return arg;}
   sing() {}
 }
 
@@ -25,6 +25,6 @@ class Antagonist extends Character {
   }
   uniqueVoiceTone() {}
   usualVoicePace() {}
-  dance() {}
+  dance<Type>(arg: Type): Type {return arg;}
   paint() {}
 }
