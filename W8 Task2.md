@@ -1,0 +1,4 @@
+- ¿Cuál es la utilidad del operador de intersección?  
+	- crear un nuevo tipo mediante la combinación de tipos existentes  
+	- el nuevo tipo posee todas las características de aquellos tipos de los cuales se deriva  
+	- de esta manera podemos combinar las propiedades de múltiples interfaces por ejemplo  
