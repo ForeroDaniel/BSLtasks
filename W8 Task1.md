@@ -1,0 +1,6 @@
+- ¿En tus propias palabras define qué es un union type?  
+	- union type (tipo unión) es un tipo formado por la combinación de dos o más tipos. Entonces, cuando usamos un union type nuestros valores pueden ser de cualquiera de los tipos que conforman esa unión, también conocidos como union’s members o  (miembros de la unión)  
+- ¿Qué clase de métodos se puede usar directamente sobre un union value?  
+	- TypeScript solo permite hacer una operación si esta es válida para cada miembro de la unión.  Por ejemplo, si tienes la unión string | number, no puedes simplemente usar métodos disponibles para string  
+- ¿Cómo se llama el proceso de verificar el tipo concreto de un union type para así usarlo como ese tipo en específico?  
+	- narrowing, este es una especie de comprobación para poder tratar a cada tipo como se debe, por ejemplo,  verificar que entre un string para usar métodos de string o para usar  métodos numericos, verificar que sean números, etc...  
