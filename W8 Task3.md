@@ -1,0 +1,6 @@
+- ¿En qué se diferencia el tipo "hola" del tipo string?  
+	- cuando en TS expresamos que una estructura es de tipo "hola", significa que solo se le puede asignar la linea de texto "hola"  
+	- cuando en TS expresamos que una estructura es de tipo string, significa  opera con datos de -texto- . Texto que se escribe entre comillas dobles ("), simples (') o invertidas(')  
+- ¿Qué utilidad le puedes encontrar al type string?  
+	- contrastando el caso anterior  tipo string vs tipo "hola", podríamos decir que cada uno es útil dependiendo de las necesidades de un momento específico.  
+	- en el caso del tipo string, este puede resultarnos particularmente útil cuando buscamos trabajar con texto sin restringirnos al uso de un par de caracteres específicos. restricción que sí ocurre en el literal type  
