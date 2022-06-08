@@ -1,5 +1,5 @@
 - ¿Qué utilidad aprecias en los type alias?  
-	- quizá si queremos referirnos a un tipo más de una vez a lo largo de un proyecto, usar alias podría ser útil  
+	- quizá si queremos referirnos a un tipo más de una vez a lo largo de un proyecto, usar alias podría ser de utilidad 
 - ¿Qué clase tipos se puede declarar usando type alias?  
 	- podemos ponerle un alias a cualquier tipo  
 - ¿Cuál es la diferencia entre poner el tipo con type alias y usarlo directamente?  
