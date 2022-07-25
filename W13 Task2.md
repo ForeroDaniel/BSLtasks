@@ -1,1 +1,8 @@
-
+- Responde la pregunta: ¿Cómo se crea un controlador?  
+	- Los controladores son parte importante de nuestras aplicaciones porque  se encargan de manejar las peticiones del cliente.  
+	- podemos generar un controlador mediante la linea de comandos de Nest de la siguiente manera: `nest generate controller` o de manera corta `nest g co`, al ejecutar este comando, Nest automáticamente crea un controlador con su archivo de prueba correspondiente (.controller.spec.ts). Adicionalmente podemos ver que app.module.ts se ha actualizado y se ha agregado el nuevo controlador a la lista 'controllers'  
+- Responde la pregunta: ¿Cómo se crea un módulo?  
+	- para generar un  módulo, podemos ejecutar `nest generate module` o su versión corta `nest g mo`  
+- Responde la pregunta: ¿Cómo se enciende el servidor local en NestJS para que nuestra aplicación empiece a responder?  
+	- Al ejecutar el comando ' npm run start ' desde el directorio raíz de nuestro proyecto, podemos encender nuestro servidor local, por defecto este se inicializa en el endpoint http://localhost:3000/  
+	- además de `npm run start `, Nest nos ofrece un script adicional que nos provee compilación en tiempo real y re-despliegue automático del servidor cada vez que se efectúan cambios en un archivo. Para aprovechar estas funcionalidades, abrimos la nuestra interface de linea de comandos desde el directorio raíz de nuestro proyecto y ejecutamos  `npm run start:dev`  
